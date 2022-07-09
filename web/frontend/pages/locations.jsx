@@ -1,5 +1,11 @@
+import {
+  Page
+} from "@shopify/polaris"
 export default function locations() {
   return (
-    <div>locations</div>
+    <Page>
+      <div>locations</div>
+    </Page>
+    
   )
 }

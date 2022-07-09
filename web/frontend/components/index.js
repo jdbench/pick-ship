@@ -1,4 +1,3 @@
 export { ProductsCard } from "./ProductsCard";
-export { NavbarComponent } from "./Navbar";
-export { ResourceListWithProducts } from "./resourceList.js";
+export { AddLocationButton } from "./AddLocationButton";
 export * from "./providers";

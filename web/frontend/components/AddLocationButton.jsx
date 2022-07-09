@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button, Modal, Form } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFolderPlus } from '@fortawesome/free-solid-svg-icons';
-import { database } from '../../../firebase';
-import { useAuth } from '../../../contexts/AuthContext'
+import { database } from '../../firebase';
+import { useAuth } from '../contexts/AuthContext';
 
-export default function AddLocationButton() {
+export function AddLocationButton() {
     const [open, setOpen] = useState(false);
     const [name, setName] = useState("");
     const { currentUser } = useAuth()
@@ -57,10 +55,10 @@ export default function AddLocationButton() {
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={closeModal} >
+            <Button onClick={closeModal} >
               Close
             </Button>
-            <Button variant="success" type="submit">
+            <Button type="submit">
               Add Folder
             </Button>
           </Modal.Footer>
